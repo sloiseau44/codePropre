@@ -6,6 +6,7 @@ package ex3;
 public class Zoo {
 
 	private String nom;
+	//private List<Zone> zones;
 	private SavaneAfricaine savaneAfricaine;
 	private ZoneCarnivore zoneCarnivore;
 	private FermeReptile fermeReptile;
@@ -15,18 +16,19 @@ public class Zoo {
 		this.nom = nom;
 	}
 	
-	public void addAnimal(String nomAnimal, String typeAnimal, String comportement){
+	public void ajouterAnnimal(/*Animal animal*/String nomAnimal, String typeAnimal, String comportement){
+		
 		if (typeAnimal.equals("MAMMIFERE") && comportement.equals("CARNIVORE")){
-			zoneCarnivore.addAnimal(typeAnimal, nomAnimal, comportement);
+			zoneCarnivore.ajouterAnnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("MAMMIFERE") && comportement.equals("HERBIVORE")){
-			savaneAfricaine.addAnimal(typeAnimal, nomAnimal, comportement);
+			savaneAfricaine.ajouterAnnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("REPTILE")){
-			fermeReptile.addAnimal(typeAnimal, nomAnimal, comportement);
+			fermeReptile.ajouterAnnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 		else if (typeAnimal.equals("POISSON")){
-			aquarium.addAnimal(typeAnimal, nomAnimal, comportement);
+			aquarium.ajouterAnnimal(new Animal(typeAnimal, nomAnimal, comportement));
 		}
 	}
 	

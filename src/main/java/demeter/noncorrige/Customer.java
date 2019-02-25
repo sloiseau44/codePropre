@@ -30,4 +30,14 @@ public class Customer {
 	public void setWallet(Wallet wallet) {
 		this.wallet = wallet;
 	}
+	
+	public double payment(double payment){
+		
+		if (wallet.getMoney() >= payment) {
+			wallet.setMoney(wallet.getMoney() - payment);
+		}else{
+			payment = 0;
+		}
+		return payment;
+	}
 }

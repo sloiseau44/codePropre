@@ -6,14 +6,14 @@ public class ZooApplication {
 		
 		Zoo zoo = new Zoo("Thoiry");
 		
-		zoo.addAnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Zèbre", "MAMIFERE", "HERBIVORE");
-		zoo.addAnimal("Lion", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Panthère", "MAMMIFERE", "CARNIVORE");
-		zoo.addAnimal("Requin blanc", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Truite dorée", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Boa constrictor", "SERPENT", "CARNIVORE");
-		zoo.addAnimal("Python", "SERPENT", "CARNIVORE");
+		zoo.ajouterAnnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
+		zoo.ajouterAnnimal("Zèbre", "MAMIFERE", "HERBIVORE");
+		zoo.ajouterAnnimal("Lion", "MAMMIFERE", "HERBIVORE");
+		zoo.ajouterAnnimal("Panthère", "MAMMIFERE", "CARNIVORE");
+		zoo.ajouterAnnimal("Requin blanc", "POISSON", "HERBIVORE");
+		zoo.ajouterAnnimal("Truite dorée", "POISSON", "HERBIVORE");
+		zoo.ajouterAnnimal("Boa constrictor", "SERPENT", "CARNIVORE");
+		zoo.ajouterAnnimal("Python", "SERPENT", "CARNIVORE");
 	}
 
 }
